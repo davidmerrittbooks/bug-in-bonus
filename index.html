@@ -14,26 +14,24 @@ h1 span{color:var(--gold);display:block}
 h2.sec{font-size:22px;margin:34px 0 6px;color:var(--gold)}
 p.sub{color:var(--muted);margin:10px 0 24px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:0 0 16px}
-.card h2,.card h3{margin:0 0 6px;font-size:19px}
+.card h2{margin:0 0 6px;font-size:19px}
 .card p{margin:0 0 14px;color:var(--muted)}
 a.btn{display:inline-block;background:var(--gold);color:#1a1a10;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px}
 a.btn:focus,a.btn:hover{outline:3px solid #fff3b0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .vid{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.vid .frame{position:relative;padding-top:56.25%;background:#000}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:contain}
 .vid .meta{padding:12px 14px 14px}
 .vid h3{margin:0 0 4px;font-size:16px}
 .vid .by{font-size:13px;color:var(--gold);margin:0 0 4px}
 .vid .ch{font-size:13px;color:var(--muted);margin:0}
-.vid a{color:var(--muted);font-size:13px}
 .fine{font-size:13px;color:var(--muted);margin-top:30px}
 </style>
 </head>
 <body>
 <main>
 <h1>The Bug-In<span>Survival Manual</span></h1>
-<p class="sub">Thank you for reading. Here are your printable extras and a few video guides from U.S. public agencies. Print the pages, fill them in with a pen, and keep them with your flashlight and radio.</p>
+<p class="sub">Thank you for reading. Here are your printable extras and short video guides from U.S. public agencies. Print the pages, fill them in with a pen, and keep them with your flashlight and radio.</p>
 
 <h2 class="sec">Printable pages</h2>
 <div class="card">
@@ -47,40 +45,37 @@ a.btn:focus,a.btn:hover{outline:3px solid #fff3b0}
 <a class="btn" href="Quick-Reference-Card.pdf" download>Download the Quick Reference Card (PDF)</a>
 </div>
 
-<h2 class="sec">Video guides from U.S. public agencies</h2>
-<p class="sub">Real videos published by U.S. government agencies on their own channels. They match topics in the book. They are not made by us.</p>
+<h2 class="sec">Video guides</h2>
+<p class="sub">Short videos made by U.S. government agencies. They are U.S. government works in the public domain. They match topics in the book. They were not made by the author of this book.</p>
 <div class="grid">
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/wILOPUiOQaA" title="Water Safety After a Disaster" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Water Safety After a Disaster</h3><p class="by">FEMA with CDC</p><p class="ch">Book: Chapter 4, Water. Presented in American Sign Language. <a href="https://www.youtube.com/watch?v=wILOPUiOQaA" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-food-outage.jpg"><source src="video-food-outage.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Food Safety During Power Outages</h3><p class="by">USDA Food Safety</p><p class="ch">1 min. Book: Chapter 5, Food Without Power.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/mQs6XAqbCgM" title="USDA Food Safety Advice After Power Loss" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Food Safety Advice After Power Loss</h3><p class="by">USDA</p><p class="ch">Book: Chapter 5, Food Without Power. <a href="https://www.youtube.com/watch?v=mQs6XAqbCgM" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-food-2hours.jpg"><source src="video-food-2hours.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Refrigerate Perishable Food Within 2 Hours</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">Short clip. Book: Chapter 5, Food Without Power.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/GkFqAbqO38Q" title="Food Safety during Power Outages" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Food Safety during Power Outages</h3><p class="by">U.S. Food and Drug Administration</p><p class="ch">Book: Chapter 5, Food Without Power. <a href="https://www.youtube.com/watch?v=GkFqAbqO38Q" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-water-boil.jpg"><source src="video-water-boil.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Under a Boil Water Advisory?</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">Short clip. Book: Chapter 4, Water.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Voob5FdYcWU" title="Carbon Monoxide | Generator Safety Tips" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Carbon Monoxide: Generator Safety Tips</h3><p class="by">U.S. Consumer Product Safety Commission</p><p class="ch">Book: Chapter 14, Heat Safely and Spend Little. <a href="https://www.youtube.com/watch?v=Voob5FdYcWU" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-co-prevent.jpg"><source src="video-co-prevent.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Prevent Carbon Monoxide (CO) Poisoning</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">1 min. Book: Chapters 6 and 14.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/jgq8fOKYn1A" title="Prevent Carbon Monoxide Poisoning" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Prevent Carbon Monoxide Poisoning</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">Book: Chapters 6 and 14. <a href="https://www.youtube.com/watch?v=jgq8fOKYn1A" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-co-hurricane.jpg"><source src="video-co-hurricane.mp4" type="video/mp4"></video>
+<div class="meta"><h3>After a Storm: Carbon Monoxide Poisoning</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">30 sec. Book: Chapter 14, Heat Safely and Spend Little.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/0ypPVKC1Wd8" title="One portable generator produces the same amount of carbon monoxide as hundreds of cars" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Portable Generators and Carbon Monoxide</h3><p class="by">U.S. Consumer Product Safety Commission</p><p class="ch">Book: Chapter 14. <a href="https://www.youtube.com/watch?v=0ypPVKC1Wd8" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-heat-cool.jpg"><source src="video-heat-cool.mp4" type="video/mp4"></video>
+<div class="meta"><h3>How to Stay Cool in Extreme Heat</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">1 min. Book: Chapter 16, Apartments and Summer Heat.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/pamBg9yarl8" title="Preparing for Winter Weather" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Preparing for Winter Weather</h3><p class="by">FEMA with CDC</p><p class="ch">Book: Chapter 6, Staying Warm and Staying Cool. <a href="https://www.youtube.com/watch?v=pamBg9yarl8" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-kit-essentials.jpg"><source src="video-kit-essentials.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Recipe for Preparedness: Kit Essentials</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">1.5 min. Book: Chapters 2 and 13.</p></div></div>
 
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Qc4fegt-lAw" title="Basic Winter Weather Preparedness" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Basic Winter Weather Preparedness</h3><p class="by">National Weather Service</p><p class="ch">Book: Chapters 6 and 12. <a href="https://www.youtube.com/watch?v=Qc4fegt-lAw" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
-
-<div class="vid"><div class="frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/e2mZGhOIFG0" title="Extreme Heat" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<div class="meta"><h3>Extreme Heat</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">Book: Chapter 16, Apartments and Summer Heat. <a href="https://www.youtube.com/watch?v=e2mZGhOIFG0" target="_blank" rel="noopener">Watch on YouTube</a></p></div></div>
+<div class="vid"><video controls preload="metadata" playsinline poster="poster-winter-car-kit.jpg"><source src="video-winter-car-kit.mp4" type="video/mp4"></video>
+<div class="meta"><h3>Recipe for Preparedness: Winter Emergency Car Kit</h3><p class="by">Centers for Disease Control and Prevention (CDC)</p><p class="ch">1.5 min. Book: Chapter 13, The Go-Bag and How to Leave.</p></div></div>
 
 </div>
 
-<p class="fine">The videos are published and owned by the agencies named above and play from YouTube. We did not make them, and the agencies are not connected to this book and do not endorse it. Video availability and content can change. Print on regular US Letter paper (8.5 x 11 in). Independent publication. Facts in the book are from public guidance (Ready.gov, CDC, USDA), checked November 2026. General information, not medical advice. In an emergency, call 9-1-1.</p>
+<p class="fine">The videos were produced by the U.S. Department of Agriculture and the Centers for Disease Control and Prevention. U.S. government works are in the public domain. Copies were taken from Wikimedia Commons and compressed for the web. The agencies are not connected to this book and do not endorse it. Print on regular US Letter paper (8.5 x 11 in). Independent publication. Facts in the book are from public guidance (Ready.gov, CDC, USDA), checked November 2026. General information, not medical advice. In an emergency, call 9-1-1.</p>
 </main>
 </body>
 </html>
